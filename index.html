@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./assets/Logotipo Biogurt.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Biogurt</title>
+</head>
+<body class="bg-white">
+     <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm" id="cabecalho">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="logoBiogurt">
+                    <img src="./assets/Logotipo Biogurt.png" alt="Logo Biogurt" width="70px">
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#destaque" class="text-gray-700 hover:text-[#80b276] font-medium">Destaque</a>
+                <a href="#sobre" class="text-gray-700 hover:text-[#80b276] font-medium">Sobre</a>
+                <a href="#beneficios" class="text-gray-700 hover:text-[#80b276] font-medium">Benefícios</a>
+                <a href="#contato" class="text-gray-700 hover:text-[#80b276] font-medium">Contato</a>
+            </nav>
+            <button class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section with Featured Product -->
+    <section id="destaque" class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-[#80b276] opacity-10"></div>
+        <div class="container mx-auto px-4 py-16 md:py-24 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative floating">
+                        <img src="./assets/Biogurt_Tradicional.png" alt="Molho de Pimenta Artesanal" width="500px">
+                    </div>
+                </div>
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Iogurte <span class="text-[#ff8080]">Tradicional</span> </h1>
+                    <p class="text-lg text-gray-600 mb-6">Iogurte vegetal à base de grão-de-bico, sem lactose, com probióticos e sabor suave, disponível nas versões morango, neutro e tradicional.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <button class="bg-[#ff8080] hover:bg-[#e67373] text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">
+                            Comprar Agora - R$ 14,99
+                        </button>
+                        <button class="border-2 border-[#80b276] text-[#80b276] font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-[#80b276] hover:text-white">
+                            <i class="fas fa-info-circle mr-2"></i> Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Product Section -->
+    <section id="sobre" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Sobre Nosso <span class="text-[#80b276]">Produto</span></h2>
+                <div class="w-20 h-1 bg-[#ff8080] mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="./assets/Biogurt_Colher.png" 
+                         alt="Ingredientes Naturais" 
+                         class="w-full rounded-xl shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Ingredientes <span class="text-[#ff8080]">Selecionados</span></h3>
+                    <p class="text-gray-600 mb-6">Nosso iogurte vegano é feito com ingredientes naturais e selecionados, sem lactose, conservantes ou aditivos artificiais. Perfeito para quem busca saúde e sabor no dia a dia. Cada pote contém:</p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-[#80b276] flex items-center justify-center mr-3">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Grão de Bico</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-[#80b276] flex items-center justify-center mr-3">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Água</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-[#80b276] flex items-center justify-center mr-3">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Probiótico</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-[#80b276] flex items-center justify-center mr-3">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Extrato de Soja em pó</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-[#ff8080]">
+                        <p class="text-gray-700 italic">
+                            <i class="fas fa-quote-left text-[#80b276] mr-2"></i>
+                            O sabor equilibrado e a qualidade dos ingredientes tornam este iogurte uma escolha excepcional para começar o dia. Uma combinação leve, saudável e deliciosa que transforma qualquer café da manhã. Recomendo para quem valoriza sabor e bem-estar em cada refeição.
+                            <i class="fas fa-quote-right text-[#80b276] ml-2"></i>
+                        </p>
+                        <div class="flex items-center mt-4">
+                            <div>
+                                <img src="./assets/pexels-_brunovisual-1157201511-27619514.jpg" alt="Foto Entrevistado" width="30px">
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-800">Ana Carolina</p>
+                                <p class="text-sm text-gray-500">Entrevistado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Benefícios <span class="text-[#ff8080]">Exclusivos</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Descubra por que nosso iogurte vegano é a escolha certa para sua mesa</p>
+                <div class="w-20 h-1 bg-[#80b276] mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 rounded-full bg-[#80b276] flex items-center justify-center text-white text-2xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Saudável</h3>
+                    <p class="text-gray-600">Zero conservantes, corantes ou aditivos químicos. Um produto que respeita sua saúde e bem-estar.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 rounded-full bg-[#80b276] flex items-center justify-center text-white text-2xl mb-4">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Qualidade Premium</h3>
+                    <p class="text-gray-600">Processo artesanal que preserva o sabor e os nutrientes, com controle rigoroso de qualidade.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-gradient-to-r from-[#80b276] to-[#ff8080] rounded-2xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 p-10 text-white">
+                        <h3 class="text-2xl font-bold mb-4">Experimente Hoje Mesmo!</h3>
+                        <p class="mb-6">Adicione um toque especial ao seu dia com nosso iogurte vegetal, saudável e cheio de sabor.</p>
+                        <div class="flex items-center">
+                            <span class="text-3xl font-bold mr-4">R$ 14,99 </span>
+                            <button class="bg-white text-[#ff8080] hover:bg-gray-100 font-bold py-2 px-6 rounded-full transition duration-300">
+                                Comprar Agora
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/Biogurt_Tampa.png" alt="Promoção" width="250px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-[#ff8080] mb-2">Na <span class="text-[#80b276]">Sua Mesa</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Veja como nosso iogurte pode transformar suas refeições</p>
+                <div class="w-20 h-1 bg-[#ff8080] mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <img src="./assets/2c12826c-aefb-490a-9691-8db3d3484f22.jpeg" alt="Granola" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <img src="./assets/bf891773-a7d8-43cc-a1f1-8a5b2e173d21.jpeg" alt="Mel" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <img src="./assets/Mistura de frutas congeladas de verão em….jpeg" alt="Mix de frutas" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <img src="./assets/Blog do Victor_ Fitas de coco {e como abrir coco….jpeg" 
+                         alt="Lascas de Coco" 
+                         class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">Fale <span class="text-[#ff8080]">Conosco</span></h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Tire suas dúvidas ou faça seu pedido diretamente conosco</p>
+                    <div class="w-20 h-1 bg-[#80b276] mx-auto mt-4"></div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row bg-gray-50 rounded-xl overflow-hidden shadow-lg">
+                    <div class="md:w-1/2 p-10 bg-[#80b276] text-white">
+                        <h3 class="text-2xl font-bold mb-6">Informações de Contato</h3>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="w-10 h-10 rounded-full bg-white text-[#80b276] flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Endereço</h4>
+                                <p>R. Cachoeira Utupanema, 40 - <br>Vila Carmosina, <br>São Paulo - SP</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="w-10 h-10 rounded-full bg-white text-[#80b276] flex items-center justify-center mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Telefone</h4>
+                                <p>(11) 985588437</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-white text-[#80b276] flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p>biogurt.oficial@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Nos siga nas redes sociais</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.instagram.com/biogurt.oficial?igsh=d3VuM2V4MDFzdG5p&utm_source=qr" class="w-10 h-10 rounded-full bg-white text-[#80b276] flex items-center justify-center hover:bg-gray-100 transition" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <p>@biogurt.oficial</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-10">
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Seu Nome <span class="red">*</span></label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#80b276] focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Seu Email <span class="red">*</span></label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#80b276] focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Seu Telefone <span class="red">*</span></label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#80b276] focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Sua Mensagem <span class="red">*</span></label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#80b276] focus:border-transparent"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-[#ff8080] hover:bg-[#e67373] text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50" id="faq">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Perguntas <span class="text-[#ff8080]">Frequentes</span></h2>
+                <div class="w-20 h-1 bg-[#80b276] mx-auto"></div>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-medium text-gray-800">Qual o prazo de validade do produto?</h3>
+                        <i class="fas fa-chevron-down text-[#80b276]"></i>
+                    </button>
+                    <div class="mt-3 text-gray-600">
+                        <p>Nosso iogurte tem prazo de validade de 5 dias enquanto fechado. Após aberto, precisa de consumo imediato.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-medium text-gray-800">Como posso comprar?</h3>
+                        <i class="fas fa-chevron-down text-[#80b276]"></i>
+                    </button>
+                    <div class="mt-3 text-gray-600">
+                        <p>É encontrado nos mercados naturais, disponível no estado de São Paulo.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-medium text-gray-800">Este iogurte é adequado para dietas veganas ou restritivas?</h3>
+                        <i class="fas fa-chevron-down text-[#80b276]"></i>
+                    </button>
+                    <div class="mt-3 text-gray-600">
+                        <p>Sim. É uma opção vegana, sem lactose e sem conservantes artificiais, ideal para dietas restritivas e estilo de vida saudável.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-medium text-gray-800">Quais são os benefícios dos probióticos presentes no iogurte?</h3>
+                        <i class="fas fa-chevron-down text-[#80b276]"></i>
+                    </button>
+                    <div class="mt-3 text-gray-600">
+                        <p>Os probióticos melhoram a saúde intestinal, dando equilibrio para a microbiota intestinal, prevenindo disbiose, auxiliando em casos de constipação intestinal e reduzindo síntomas da síndrome do intestino irritável. Além disso, pode fortalecer o sistema imunologico e melhorar na digestão e absorção de nutrientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <img src="./assets/Logotipo Biogurt.png" alt="Logo Biogurt" width="130px">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Navegação</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#destaque" class="text-gray-400 hover:text-white transition">Destaque</a></li>
+                            <li><a href="#sobre" class="text-gray-400 hover:text-white transition">Sobre</a></li>
+                            <li><a href="#beneficios" class="text-gray-400 hover:text-white transition">Benefícios</a></li>
+                            <li><a href="#contato" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Produtos</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition">Iogurte Tradicional</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition">Iogurte de Morango</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Legal</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition">Termos de Uso</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition">Política de Privacidade</a>
+                            </li>
+                            <li>
+                                <a href="#faq" class="text-gray-400 hover:text-white transition">Dúvidas Frequentes</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Serviço de Atendimento ao Cliente</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition">0800 038 2458</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition">Trabalhe Conosco</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Horário de Atendimento</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition">Horário de atendimento do SAC das 09:00 às 19:00</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition">(Horário de Brasília) De segunda-feira a sexta-feira</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 Biogurt. Todos os direitos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="https://www.instagram.com/biogurt.oficial?igsh=d3VuM2V4MDFzdG5p&utm_source=qr" class="text-gray-400 hover:text-white transition" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-[#ff8080] text-white shadow-lg flex items-center justify-center transition opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="./script/script.js"></script>
+</body>
+</html>
