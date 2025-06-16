@@ -37,9 +37,3 @@ faqButtons.forEach(button => {
         }
     });
 });
-
-// Mobile Menu Toggle (placeholder - would need more implementation)
-const mobileMenuButton = document.querySelector('.md\\:hidden');
-mobileMenuButton.addEventListener('click', () => {
-    alert('Menu mobile seria implementado aqui com mais detalhes');
-});
