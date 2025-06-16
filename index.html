@@ -11,7 +11,7 @@
 </head>
 <body class="bg-white">
      <!-- Header/Navigation -->
-    <header class="sticky top-0 z-50 bg-white shadow-sm" id="cabecalho">
+    <header class="sticky top-0 z-50 bg-white shadow-lg" id="cabecalho">
         <div class="container mx-auto my-0 px-4 py-0 flex justify-between items-center">
             <div class="flex items-center">
                 <div class="logoBiogurt">
@@ -28,8 +28,7 @@
     </header>
 
     <!-- Hero Section with Featured Product -->
-   <section id="destaque" class="relative overflow-hidden group pt-0 bg-white">
-        <div class="absolute inset-0 bg-[#80b276] opacity-10"></div>
+   <section id="destaque" class="relative overflow-hidden group bg-white mb-0 pb-0">
 
         <!-- Slides wrapper -->
         <div class="relative z-10 w-screen overflow-hidden">
@@ -37,7 +36,7 @@
             <div id="slides" class="flex w-[200vw] transition-transform duration-500 ease-in-out group-hover:scale-[1.02]" style="transform: translateX(0%)">
             
                 <!-- Slide 1 -->
-                <div class="w-screen flex flex-row flex-wrap items-center pb-10">
+                <div class="w-screen flex flex-row flex-wrap items-center pb-10 ">
                     <div class="md:w-1/2 flex justify-center">
                         <img src="./assets/Biogurt_Tradicional.png" alt="Iogurte Tradicional" width="500px">
                     </div>
@@ -58,7 +57,7 @@
                     <div class="md:w-1/2 flex justify-center">
                         <img src="./assets/Biogurt_Morango.png" alt="Iogurte Morango" width="500px">
                     </div>
-                    <div class="md:w-1/2 mb-10 md:mb-0 text-white px-6">
+                    <div class="md:w-1/2 mb-0 md:mb-0 text-white px-6">
                         <h1 class="text-4xl text-[#80b276] md:text-5xl font-bold mb-4">Iogurte <span class="text-[#ff8080]">Morango</span></h1>
                         <p class="text-lg mb-6 text-black">Sabor morango com fruta in natura e aroma natural. Uma explosão de frescor!</p>
                         <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -87,21 +86,16 @@
     </section>
 
     <!-- About Product Section -->
-    <section id="sobre" class="py-16 bg-gray-50">
+    <section id="sobre" class="mt-0 py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Sobre Nosso <span class="text-[#80b276]">Produto</span></h2>
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-[#ff8080] mb-2">Sobre Nosso <span class="text-[#80b276]">Produto</span></h2>
                 <div class="w-20 h-1 bg-[#ff8080] mx-auto"></div>
             </div>
             
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                    <img src="./assets/Biogurt_Colher.png" 
-                         alt="Ingredientes Naturais" 
-                         class="w-full rounded-xl shadow-lg">
-                </div>
+            <div class="flex flex-col items-center h-auto">
                 <div class="md:w-1/2">
-                    <h3 class="text-2xl font-bold text-[#80b276] mb-4">Ingredientes <span class="text-[#ff8080]">Selecionados</span></h3>
+                    <h3 class="text-2xl font-bold text-[#80b276] mb-4">Ingredientes <span class="text-gray-700">Selecionados</span></h3>
                     <p class="text-gray-600 mb-6">Nosso iogurte vegano é feito com ingredientes naturais e selecionados, sem lactose, conservantes ou aditivos artificiais. Perfeito para quem busca saúde e sabor no dia a dia. Cada pote contém:</p>
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">

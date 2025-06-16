@@ -5,6 +5,16 @@ body {
     scroll-behavior: smooth;
 }
 
+#destaque {
+    top: -100px;
+}
+
+@media (max-width: 768px) {
+    #destaque {
+        top: -270px;
+    }
+}
+
 .fundoEntrevistado {
     background-color: lightgreen;
     border-radius: 100%;
