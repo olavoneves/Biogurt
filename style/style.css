@@ -6,7 +6,7 @@ body {
 }
 
 #destaque {
-    top: -100px;
+    top: -75px;
     background-image: url('../assets/FundoBanner.jpg');
     background-repeat: no-repeat;
     background-position: center;
