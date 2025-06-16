@@ -7,6 +7,10 @@ body {
 
 #destaque {
     top: -100px;
+    background-image: url('../assets/FundoBanner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 @media (max-width: 768px) {
