@@ -12,46 +12,76 @@
 <body class="bg-white">
      <!-- Header/Navigation -->
     <header class="sticky top-0 z-50 bg-white shadow-sm" id="cabecalho">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="container mx-auto px-4 py-0 flex justify-between items-center">
             <div class="flex items-center">
                 <div class="logoBiogurt">
-                    <img src="./assets/Logotipo Biogurt.png" alt="Logo Biogurt" width="70px">
+                    <img src="./assets/Logotipo Biogurt.png" alt="Logo Biogurt" width="110px">
                 </div>
             </div>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#destaque" class="text-gray-700 hover:text-[#80b276] font-medium">Destaque</a>
-                <a href="#sobre" class="text-gray-700 hover:text-[#80b276] font-medium">Sobre</a>
-                <a href="#beneficios" class="text-gray-700 hover:text-[#80b276] font-medium">Benefícios</a>
-                <a href="#contato" class="text-gray-700 hover:text-[#80b276] font-medium">Contato</a>
+            <nav class="flex space-x-3 md:space-x-8">
+                <a href="#destaque" class="text-[#80b276] hover:text-gray-700 font-medium">Destaque</a>
+                <a href="#sobre" class="text-[#80b276] hover:text-gray-700 font-medium">Sobre</a>
+                <a href="#beneficios" class="text-[#80b276] hover:text-gray-700 font-medium">Benefícios</a>
+                <a href="#contato" class="text-[#80b276] hover:text-gray-700 font-medium">Contato</a>
             </nav>
-            <button class="md:hidden text-gray-700">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
         </div>
     </header>
 
     <!-- Hero Section with Featured Product -->
-    <section id="destaque" class="relative overflow-hidden">
+   <section id="destaque" class="relative overflow-hidden group pt-0 bg-white">
         <div class="absolute inset-0 bg-[#80b276] opacity-10"></div>
-        <div class="container mx-auto px-4 py-16 md:py-24 relative z-10">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 flex justify-center">
-                    <div class="relative floating">
-                        <img src="./assets/Biogurt_Tradicional.png" alt="Molho de Pimenta Artesanal" width="500px">
+
+        <!-- Slides wrapper -->
+        <div class="relative z-10 w-screen overflow-hidden">
+            <!-- Slides -->
+            <div id="slides" class="flex w-[200vw] transition-transform duration-500 ease-in-out group-hover:scale-[1.02]" style="transform: translateX(0%)">
+            
+                <!-- Slide 1 -->
+                <div class="w-screen flex flex-row flex-wrap items-center">
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="./assets/Biogurt_Tradicional.png" alt="Iogurte Tradicional" width="500px">
+                    </div>
+                    <div class="md:w-1/2 mb-0 text-white px-6">
+                        <h1 class="text-4xl text-[#ff8080] md:text-5xl font-bold mb-4">Iogurte <span class="text-[#80b276]">Tradicional</span></h1>
+                        <p class="text-lg mb-6 text-black">Iogurte vegetal à base de grão-de-bico, sem lactose, com probióticos e sabor suave.</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <button class="bg-[#ff8080] hover:bg-[#e67373] text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">Comprar Agora - R$ 14,99</button>
+                            <button class="bg-white border-2 border-[#80b276] text-[#80b276] font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-[#80b276] hover:text-white">
+                            <i class="fas fa-info-circle mr-2"></i>Saiba Mais
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Iogurte <span class="text-[#ff8080]">Tradicional</span> </h1>
-                    <p class="text-lg text-gray-600 mb-6">Iogurte vegetal à base de grão-de-bico, sem lactose, com probióticos e sabor suave, disponível nas versões morango, neutro e tradicional.</p>
-                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                        <button class="bg-[#ff8080] hover:bg-[#e67373] text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">
-                            Comprar Agora - R$ 14,99
-                        </button>
-                        <button class="border-2 border-[#80b276] text-[#80b276] font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-[#80b276] hover:text-white">
-                            <i class="fas fa-info-circle mr-2"></i> Saiba Mais
-                        </button>
+
+                <!-- Slide 2 -->
+                <div class="w-screen flex flex-row flex-wrap items-center">
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="./assets/Biogurt_Morango.png" alt="Iogurte Morango" width="500px">
+                    </div>
+                    <div class="md:w-1/2 mb-10 md:mb-0 text-white px-6">
+                        <h1 class="text-4xl text-[#80b276] md:text-5xl font-bold mb-4">Iogurte <span class="text-[#ff8080]">Morango</span></h1>
+                        <p class="text-lg mb-6 text-black">Sabor morango com fruta in natura e aroma natural. Uma explosão de frescor!</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <button class="bg-[#ff8080] hover:bg-[#e67373] text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">Comprar Agora - R$ 14,99</button>
+                            <button class="bg-white border-2 border-[#80b276] text-[#80b276] font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-[#80b276] hover:text-white">
+                            <i class="fas fa-info-circle mr-2"></i>Saiba Mais
+                            </button>
+                        </div>
                     </div>
                 </div>
+
+            </div>
+
+            <!-- Botões -->
+            <div class="absolute top-1/2 left-4 transform -translate-y-1/2 z-20">
+                <button onclick="moverSlide(-1)" class="w-12 h-12 rounded-full bg-white text-[#80b276] hover:bg-[#80b276] hover:text-white transition duration-300 flex items-center justify-center shadow-lg">
+                    <i class="fas fa-chevron-left text-xl"></i>
+                </button>
+            </div>
+            <div class="absolute top-1/2 right-4 transform -translate-y-1/2 z-20">
+                <button onclick="moverSlide(1)" class="w-12 h-12 rounded-full bg-white text-[#80b276] hover:bg-[#80b276] hover:text-white transition duration-300 flex items-center justify-center shadow-lg">
+                    <i class="fas fa-chevron-right text-xl"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -71,7 +101,7 @@
                          class="w-full rounded-xl shadow-lg">
                 </div>
                 <div class="md:w-1/2">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Ingredientes <span class="text-[#ff8080]">Selecionados</span></h3>
+                    <h3 class="text-2xl font-bold text-[#80b276] mb-4">Ingredientes <span class="text-[#ff8080]">Selecionados</span></h3>
                     <p class="text-gray-600 mb-6">Nosso iogurte vegano é feito com ingredientes naturais e selecionados, sem lactose, conservantes ou aditivos artificiais. Perfeito para quem busca saúde e sabor no dia a dia. Cada pote contém:</p>
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -126,7 +156,7 @@
     <section id="beneficios" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Benefícios <span class="text-[#ff8080]">Exclusivos</span></h2>
+                <h2 class="text-3xl font-bold text-[#80b276] mb-2">Benefícios <span class="text-[#ff8080]">Exclusivos</span></h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">Descubra por que nosso iogurte vegano é a escolha certa para sua mesa</p>
                 <div class="w-20 h-1 bg-[#80b276] mx-auto mt-4"></div>
             </div>
@@ -137,7 +167,7 @@
                         <i class="fas fa-heart"></i>
                     </div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">Saudável</h3>
-                    <p class="text-gray-600">Zero conservantes, corantes ou aditivos químicos. Um produto que respeita sua saúde e bem-estar.</p>
+                    <p class="text-gray-600">Produzido com ingredientes vegetais selecionados e um processo que preserva sabor, textura e nutrientes – do grão-de-bico à sua colher.</p>
                 </div>
                 
                 <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
@@ -148,21 +178,31 @@
                     <p class="text-gray-600">Processo artesanal que preserva o sabor e os nutrientes, com controle rigoroso de qualidade.</p>
                 </div>
             </div>
-            
-            <div class="mt-16 bg-gradient-to-r from-[#80b276] to-[#ff8080] rounded-2xl overflow-hidden">
-                <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/2 p-10 text-white">
-                        <h3 class="text-2xl font-bold mb-4">Experimente Hoje Mesmo!</h3>
-                        <p class="mb-6">Adicione um toque especial ao seu dia com nosso iogurte vegetal, saudável e cheio de sabor.</p>
+
+            <div class="mt-10 bg-gradient-to-r from-[#80b276] to-[#ff8080] rounded-2xl overflow-hidden">
+                <h3 class="text-2xl text-white font-bold mb-0 text-center mt-10">Experimente Hoje Mesmo!</h3>
+                <div class="flex flex-row">
+                    <div class="md:w-1/2 pt-0 p-5 text-white">
+                        <div>
+                            <img src="./assets/Biogurt_Tampa.png" alt="Promoção" width="250px">
+                        </div>
                         <div class="flex items-center">
                             <span class="text-3xl font-bold mr-4">R$ 14,99 </span>
-                            <button class="bg-white text-[#ff8080] hover:bg-gray-100 font-bold py-2 px-6 rounded-full transition duration-300">
+                            <button class="bg-white text-[#ff8080] hover:text-white hover:bg-[#ff8080] font-bold py-2 px-6 rounded-full transition duration-300">
                                 Comprar Agora
                             </button>
                         </div>
                     </div>
-                    <div>
-                        <img src="./assets/Biogurt_Tampa.png" alt="Promoção" width="250px">
+                    <div class="md:w-1/2 pt-0 p-5 text-white">
+                        <div>
+                            <img src="./assets/Biogurt_Tradicional_03.png" alt="Promoção" width="250px">
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-3xl font-bold mr-4">R$ 14,99 </span>
+                            <button class="bg-white text-[#ff8080] hover:text-white hover:bg-[#ff8080] font-bold py-2 px-6 rounded-full transition duration-300">
+                                Comprar Agora
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -202,7 +242,7 @@
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-2">Fale <span class="text-[#ff8080]">Conosco</span></h2>
+                    <h2 class="text-3xl font-bold text-[#80b276] mb-2">Fale <span class="text-[#ff8080]">Conosco</span></h2>
                     <p class="text-gray-600 max-w-2xl mx-auto">Tire suas dúvidas ou faça seu pedido diretamente conosco</p>
                     <div class="w-20 h-1 bg-[#80b276] mx-auto mt-4"></div>
                 </div>
@@ -288,7 +328,7 @@
     <section class="py-16 bg-gray-50" id="faq">
         <div class="container mx-auto px-4 max-w-4xl">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Perguntas <span class="text-[#ff8080]">Frequentes</span></h2>
+                <h2 class="text-3xl font-bold text-[#80b276] mb-2">Perguntas <span class="text-[#ff8080]">Frequentes</span></h2>
                 <div class="w-20 h-1 bg-[#80b276] mx-auto"></div>
             </div>
             
@@ -411,8 +451,8 @@
                 </div>
             </div>
             
-            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 Biogurt. Todos os direitos reservados.</p>
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0 text-center">&copy; 2025 Biogurt. Todos os direitos reservados.</p>
                 <div class="flex space-x-6">
                     <a href="https://www.instagram.com/biogurt.oficial?igsh=d3VuM2V4MDFzdG5p&utm_source=qr" class="text-gray-400 hover:text-white transition" target="_blank">
                         <i class="fab fa-instagram"></i>
@@ -427,5 +467,6 @@
         <i class="fas fa-arrow-up"></i>
     </button>
     <script src="./script/script.js"></script>
+    <script src="./script/carrosel.js"></script>
 </body>
-</html>
+</html> 
