@@ -1,33 +1,32 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("formContato");
+document.getElementById('formContato').addEventListener('submit', async function (e) {
+  e.preventDefault();
 
-    form.addEventListener("submit", async function (e) {
-        e.preventDefault();
+  const data = {
+    nome: document.getElementById('nome').value,
+    email: document.getElementById('email').value,
+    telefone: document.getElementById('telefone').value,
+    mensagem: document.getElementById('mensagem').value,
+  };
 
-        const data = {
-            name: form.name.value,
-            email: form.email.value,
-            phone: form.phone.value,
-            message: form.message.value,
-        };
-
-        try {
-            const response = await fetch("https://SEU-BACKEND-DEPLOYADO/api/email", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(data),
-            });
-
-            if (response.ok) {
-                alert("Mensagem enviada com sucesso!");
-                form.reset();
-            } else {
-                console.log('Erro ao enviar. Tente novamente mais tarde.')
-            }
-        } catch (error) {
-            console.error("Erro na requisição:", error);
-        }
+  try {
+    const response = await fetch('http://localhost:8080/api/contato', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data),
     });
+
+    if (response.ok) {
+      alert("Mensagem enviada com sucesso!");
+      document.getElementById('formContato').reset();
+    } else {
+      const err = await response.text();
+      console.error('Erro:', err);
+      alert("Erro ao enviar mensagem.");
+    }
+  } catch (error) {
+    console.error('Erro de rede:', error);
+    alert("Erro ao conectar com o servidor.");
+  }
 });

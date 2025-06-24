@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        const name = document.getElementById("name").value.trim();
+        const name = document.getElementById("nome").value.trim();
         const email = document.getElementById("email").value.trim();
-        const phone = document.getElementById("phone").value.trim();
-        const message = document.getElementById("message").value.trim();
+        const phone = document.getElementById("telefone").value.trim();
+        const message = document.getElementById("mensagem").value.trim();
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const phoneRegex = /^[0-9\s\-()+]+$/;
